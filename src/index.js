@@ -1,11 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Header from './Header'
+import PaginaDOIS from './PaginaDOIS'
+import PaginaUM from './PaginaUM'
 
 ReactDOM.render(
-  <Header fontSize='20' titulo="Titulo TOP"/>
-  ,
+  <PaginaDOIS />,
   document.getElementById('root')
-    
 )
   
