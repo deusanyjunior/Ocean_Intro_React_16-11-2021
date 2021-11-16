@@ -4,7 +4,7 @@ import PaginaDOIS from './PaginaDOIS'
 import PaginaUM from './PaginaUM'
 
 ReactDOM.render(
-  <PaginaDOIS />,
+  <PaginaUM />,
   document.getElementById('root')
 )
   
