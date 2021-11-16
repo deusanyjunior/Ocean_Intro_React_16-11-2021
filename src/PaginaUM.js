@@ -1,7 +1,6 @@
 import React from 'react'
-import Header from './cmpnts/Header'
+import Header from './components/Header'
 import Calendario from './Calendario/Calendario';
-
 
 function PaginaUM() {
     return (
