@@ -1,30 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Header from './Header'
 
-function Login(){
-    return(
-      <div>
-        <p>Username:</p>
-        <p>Password:</p>
-      </div>
-    )
-  }
-  
-  function Header(props){
-    return(
-      <div>
-        <p style={{fontSize: props.fontSize+'px'}}>DJ - {props.titulo} FontSize: {props.fontSize}</p>
-      </div>
-    )
-  }
-  
-  ReactDOM.render(
-    <React.StrictMode>
-      <Header titulo="Início" fontSize="30"/>
-      <Login />
-    </React.StrictMode>
-    ,
-    document.getElementById('root')
-      
-  )
+ReactDOM.render(
+  <Header fontSize='20' titulo="Titulo TOP"/>
+  ,
+  document.getElementById('root')
+    
+)
   
