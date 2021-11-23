@@ -1,8 +1,9 @@
 import React from 'react';
+import './Calendario.css'
 
 class Dia extends React.Component {
 
-    state = { qtdCliques: '0' }
+    state = { qtdCliques: 0 }
     
     constructor () {
         super();
@@ -10,13 +11,19 @@ class Dia extends React.Component {
     }
 
     handleOnClick(event) {
-        this.setState( {  qtdCliques: 1 } );
-        console.log("Clicou " + this.state.qtdCliques + " vezes em " + this.props.data)
+        var contador = this.state.qtdCliques + 1;
+        this.setState( 
+            {  qtdCliques: contador },
+            function () {
+                console.log("CALLBACK: Clicou " + this.state.qtdCliques + " vezes em " + this.props.data)
+            }
+        );
+        console.log("NATURAL: Clicou " + this.state.qtdCliques + " vezes em " + this.props.data)        
     }
 
     render () {
         return (
-            <button onClick={this.handleOnClick}>
+            <button className="dia" onClick={this.handleOnClick}>
                 { 
                     (this.props.data > 0 && this.props.data < 32) ? 
                         this.props.data : 

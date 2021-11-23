@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './components/Header'
-import Calendario from './Calendario/Calendario';
+import Header from './components/Header/Header'
+import Calendario from './components/Calendario/Calendario';
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
 
