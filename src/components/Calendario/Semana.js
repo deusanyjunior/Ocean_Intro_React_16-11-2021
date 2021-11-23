@@ -2,7 +2,7 @@ import Dia from './Dia'
 
 function Semana({diaInicial,mes,ano}) {
     return(
-        <div>
+        <div className="semana">
             <Dia data={diaInicial} mes={mes} ano={ano} />
             <Dia data={diaInicial + 1} />
             <Dia data={diaInicial + 2} />

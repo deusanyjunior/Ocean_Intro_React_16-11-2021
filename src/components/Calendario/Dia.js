@@ -1,5 +1,4 @@
 import React from 'react';
-import './Calendario.css'
 
 class Dia extends React.Component {
 
